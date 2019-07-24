@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-flow: column;
 }
 
 .App-logo {
@@ -22,7 +26,38 @@
   font-size: large;
 }
 
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border: solid 0.7px lightgray;
+  border-top: none;
+}
+.table-header {
+  background-color: lightgray;
+}
+
+.table {
+  width: 70%;
+}
+
+.search-div {
+  padding: 20px 0;
+  width: 70%;
+}
+.search-bar {
+  width: 100%;
+  padding: 5px;
+}
+.red {
+  color: red;
+}
+
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
